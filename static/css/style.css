@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+* {
+	font-family: 'open-sans-regular';
+}
+
+@font-face {
+  font-family: 'open-sans-light';
+  src: url('../font/OpenSans-Light.ttf');
+}
+@font-face {
+  font-family: 'open-sans-regular';
+  src: url('../font/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'open-sans-semibold';
+  src: url('../font/OpenSans-Semibold.ttf');
+}
