@@ -42,6 +42,44 @@ angular.module('app.routes', [])
 	      	}
 	      }
 	    })
+
+	    .state('main.landing', {
+	      url: '/landing',
+	      views: {
+	      	'menuContent': {
+	      		templateUrl: 'templates/landing.html',
+	      		controller: 'landingCtrl'
+	      	}
+	      }
+	    })
+
+	    .state('main.item', {
+	      url: '/item',
+	      views: {
+	      	'menuContent': {
+	      		templateUrl: 'templates/item.html',
+	      		controller: 'itemCtrl'
+	      	}
+	      }
+	    })
+	    .state('main.multi', {
+	      url: '/multi',
+	      views: {
+	      	'menuContent': {
+	      		templateUrl: 'templates/multi.html',
+	      		controller: 'multiCtrl'
+	      	}
+	      }
+	    })
+	    .state('main.list', {
+	      url: '/list',
+	      views: {
+	      	'menuContent': {
+	      		templateUrl: 'templates/list.html',
+	      		controller: 'listCtrl'
+	      	}
+	      }
+	    })
 	  // if none of the above states are matched, use this as the fallback
 	  $urlRouterProvider.otherwise('/home');
 

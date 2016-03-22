@@ -1,0 +1,31 @@
+<ion-view title="landing">
+  <ion-nav-buttons side="left">
+     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-android-search"></button>
+    <button class="button button-icon icon ion-funnel"></button>
+    <button class="button button-icon icon ion-android-more-vertical"></button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+  </ion-nav-title>
+  <ion-content has-header="true" scroll="false">
+    <ion-scroll zooming="true" direction="xy" style="width: 100%; height: 100%" delegate-handle="vvvvv">
+        <div class="map-scroll">
+            <div class="mark-1" ng-click="goMulti()"></div>
+            <div class="mark-multi">2</div>
+            <div class="mark-pos"></div>
+            <div class="mark-2" ng-click="goItem()"></div>
+            <div class="mark-3" ng-click="goItem()"></div>
+            <div class="mark-4" ng-click="goItem()"></div>
+            <div class="mark-5" ng-click="goItem()"></div>
+            <div class="mark-6" ng-click="goItem()"></div> 
+        </div>
+    </ion-scroll>
+    <button class="map-button-center button"></button>
+    <button class="map-button-1 button" ng-click="goMypos()"></button>
+    <button class="map-button-2 button" ng-click="goList()"></button>
+    <button class="map-button-3 button"></button>
+    <button class="map-button-4 button"></button>
+  </ion-content>
+</ion-view>

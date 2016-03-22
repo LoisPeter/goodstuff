@@ -10,7 +10,11 @@ angular.module('app',
   'app.forgot',
   'app.login',
   'app.main',
-  'app.main.register'])
+  'app.main.register',
+  'app.main.landing',
+  'app.main.item',
+  'app.main.multi',
+  'app.main.list'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

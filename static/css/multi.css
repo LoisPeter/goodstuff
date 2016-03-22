@@ -1,0 +1,83 @@
+.multi-button-center {
+	position: absolute;
+	background-size: 100% !important;
+	background-repeat: no-repeat !important;
+	bottom: 5%;
+	left: 42%;
+	width: 64px;
+	height: 64px;
+	background: url('../img/map_btn_center1.png');
+}
+.multi-location,
+.multi-product,
+.multi-rate {
+	width: 100%;
+}
+.multi-location {
+	height: 50%;
+	background: url('../img/map.png');
+}
+.multi-mark {
+	top: 16%;
+	left: 44%;
+	position: absolute;
+	height: 54px;
+	width: 36px;
+	background-size: 100% 100% !important;
+	background-repeat: no-repeat;
+	background: url('../img/mark_multi.png');
+}
+.multi-product {
+	height: 160px;
+	background: url('../img/multi_product.png');
+	background-size: auto 100%;
+}
+.multi-product-text {
+	position: absolute;
+	top: 70%;
+	width: 120px;
+	height: 38px;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.55);
+}
+.multi-rate {
+	color: #585858;
+	padding: 10px 16px;
+}
+.multi-face {
+	margin-top: -32px;margin-left: 72%;
+	position: absolute;
+	width: 72px;
+	height: 72px;
+	border-radius: 50px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: white;
+	background-size: 100% 100% !important;
+	background-repeat: no-repeat !important;
+	background: url('../img/face.png');
+}
+.myheart {
+	position: absolute;
+	margin-top: 14px;
+	font-size: 28px;
+	left: 90%;
+	text-shadow:
+	1px 1px 0 #FFF,
+	-1px 1px 0 #FFF,
+	-1px -1px 0 #FFF,
+	1px -1px 0 #FFF;
+}
+.mystar {
+	font-size: 28px;
+}
+.enable {
+	color: #C86606;
+}
+.disable {
+	color: #585858;
+}
+.reviews {
+	font-size: 18px;
+	color: #585858;
+}

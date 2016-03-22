@@ -15,3 +15,7 @@
   font-family: 'open-sans-semibold';
   src: url('../font/OpenSans-Semibold.ttf');
 }
+
+h1, h2, h3, h4, h5 {
+	font-family: 'open-sans-semibold';	
+}
