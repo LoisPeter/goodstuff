@@ -3,18 +3,35 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('app',
-  ['ionic',
-  'app.routes',
-  'app.home',
-  'app.forgot',
-  'app.login',
-  'app.main',
-  'app.main.register',
-  'app.main.landing',
-  'app.main.item',
-  'app.main.multi',
-  'app.main.list'])
+angular.module('app', ['ionic',
+ 'app.routes',
+ 'app.services',
+ 'app.home',
+ 'app.main',
+ 'app.detail',
+ 'main.adjustment',
+ 'main.adjustment.data',
+ 'main.adjustment.photo',
+ 'main.adjustment.schedule',
+ 'app.editcustomer',
+ 'app.editcustomer.data',
+ 'app.editcustomer.history',
+ 'main.content',
+ 'main.pendient',
+ 'main.addappointment',
+ 'main.addappointment.newclient',
+ 'main.addappointment.existclient',
+ 'main.customers',
+ 'app.addcustomer',
+ 'main.categories',
+ 'app.newcategory',
+ 'app.service',
+ 'app.newservice'
+  ])
+.constant('ApiEndpoint', {
+  url: 'http://localhost:8100/api'
+  //url:'http://nuevo.restuento.com/api'
+})
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

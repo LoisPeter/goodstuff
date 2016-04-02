@@ -1,0 +1,28 @@
+<ion-view title="Edit Customer">
+  <ion-nav-bar class="bar-calm">
+    <ion-nav-buttons side="left">
+       <button class="button icon-left ion-android-arrow-back" ng-click="goBack()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+       <button class="button" ng-click="save()">GUARDAR</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-nav-title>
+    <div class="mytitle">
+      <h1>editar cliente</h1>
+    </div>
+  </ion-nav-title>
+  <div class="tabs-striped tabs-top tabs-background-dark tabs-color-light">
+      <ion-tabs>
+          <ion-tab title="DATOS" href="#editcustomer/customerdata">
+              <ion-nav-view  name="datatab"></ion-nav-view>
+          </ion-tab>
+          <ion-tab title="HISTÓRICO DE CITAS" href="#editcustomer/customerhistory">
+              <ion-nav-view name="historytab"></ion-nav-view>
+          </ion-tab>
+      </ion-tabs>
+  </div>
+  <div class="bar bar-footer bar-assertive">
+    <div class="title" ng-click="delete()">ELIMINAR</div>
+  </div>
+</ion-view>

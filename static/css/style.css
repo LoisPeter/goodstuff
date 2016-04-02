@@ -1,8 +1,4 @@
 /* Empty. Add your own CSS if you like */
-* {
-	font-family: 'open-sans-regular';
-}
-
 @font-face {
   font-family: 'open-sans-light';
   src: url('../font/OpenSans-Light.ttf');
@@ -15,7 +11,193 @@
   font-family: 'open-sans-semibold';
   src: url('../font/OpenSans-Semibold.ttf');
 }
+p {
+  font-family: 'open-sans-regular';
+}
+.tab-item,.bar {
+  font-family: 'open-sans-regular';
+}
+/* background style*/
+.green {
+  background: #009E3F;
+}
+.gray {
+  background: #EDEDED;
+}
+.blue {
+  background: #0892D2;
+}
+.red {
+  background: #F9553A;
+}
+.dark {
+  background-color: #29292a !important;
+  color: #ffffff;
+  border-width: 0px !important;
+}
+.black {
+  background-color: #202020 !important;
+  color: #ffffff;
+  border-width: 0px !important; 
+}
+/*--------------*/
+a.button .icon::before, a.button.icon::before, a.button.icon-left::before, a.button.icon-right::before {
+    margin-top: 10px;
+}
+.mytitle h1 {
+  font-family: 'open-sans-semibold';
+  color: #dfebed;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 7px;
+  margin-top: 10px;
+}
+.current-date h1 {
+  font-family: 'open-sans-semibold';
+  color: #dfebed;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 7px;
+}
+.button, .title {
+  font-family: 'open-sans-regular';
+}
+.item-sub {
+  background-color: #EAEAEA;
+  text-align: right;
+  font-family: 'open-sans-light' !important;
+}
+/*home screen*/
+.home_back {
+	height: 100%;
+	width: 100%;
+}
+.top_space {
+  width:100%;
+  height:100px;
+}
+.home_title_div {
+  text-align: center;
+}
+.home_logo {
+	margin: auto;
+  padding-top: 20px;
+  padding-bottom: 4px;
+}
+.submit_space {
+  width: 100%;
+  height: 100px;
+}
+.form_div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*main screen*/
+.main_title {
+  text-align: center;
+}
+.main_title-1{
+  font-family: 'open-sans-regular';
+}
 
-h1, h2, h3, h4, h5 {
-	font-family: 'open-sans-semibold';	
+.main_title-2{
+  font-family: 'open-sans-light';
+}
+.main-list {
+  width: 100%;
+}
+.main-item {
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+  border:none;
+}
+.main-item-div {
+  height: 56px;
+  display: block;
+}
+.main-item-left, .main-item-center, .main-item-right {
+  height: 100%;
+  float: left;
+}
+.main-item-left {
+  display: block;
+  width: 18%;
+}
+.main-item-center {
+  width: 2%;
+}
+.main-item-right {
+  width: 80%;
+}
+.venue-title{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  margin: 50px 0px 34px 0px;
+  font-size: 20px;
+}
+
+.menu-mark-text,
+.main-item-to,
+.main-item-detail{
+  font-family: 'open-sans-light';
+}
+.main-item-to {
+  font-size: 14px !important;
+  margin-top: 5px !important;
+}
+.main-item-from,
+.main-item-to {
+  text-align: right;
+  padding-right: 5px;
+  padding-top: 4px;
+}
+.item,
+.venue-title,
+.main-item-from ,
+.main-item-name{
+  font-family: 'open-sans-regular';
+}
+.main-item-name,
+.main-item-detail {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+}
+.main-item-from,
+.main-item-to,
+.main-item-name,
+.main-item-detail,
+.main_title-1,
+.main_title-2 {
+  color: rgb(63, 63, 63);
+}
+.menu-mark {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: rgb(17, 193, 243);
+  border-radius: 50%;
+  top: 10px;
+  right: 60px;
+}
+.menu-mark-text {
+  color: #ffffff;
+  top: 8px;
+  left: 10px;
+  position: absolute;
+}
+/*detail screen*/
+.detail-item-input,
+.item-select option,
+.item-select select {
+  font-family: 'open-sans-regular';
+  font-size: 14px !important;
+  text-align: right;
+  color: #565656 !important;;
+}
+
+.item-input-invalid {
+  border-bottom: 2px solid #fa486c;
 }

@@ -1,0 +1,26 @@
+<ion-view class="citasPendient-view">
+	 <ion-nav-buttons side="left">
+	     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	  </ion-nav-buttons>
+	<ion-nav-title>
+	    <div class="mytitle">
+	      <h1>citas pendientes</h1>
+	    </div>
+	</ion-nav-title>
+	<ion-content class="has-header">
+		<ion-list>
+			<ion-item class="pendient-item" ng-repeat="x in pendingAppointments">
+				<div class="pendient-item-color" style="background-color: {{'#'+x.itemcolor}}"></div>
+				<div class="pendient-item-1">{{x.datetime}}</div>
+				<div class="pendient-item-2">{{x.customerName}}</div>
+				<div class="pendient-item-3">{{x.service_resource}}</div>
+				<ion-option-button class= "pendient-option button-balanced" ng-click="accept(x.index)">
+					<div style="margin: auto;font-size: 20px;">✓</div>
+				</ion-option-button>
+				<ion-option-button class= "pendient-option button-assertive" ng-click="decline(x.index)">
+					<div style="margin: auto;font-size: 26px;">✕</div>
+				</ion-option-button>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

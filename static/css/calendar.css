@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0;
+	outline: none;
+	padding: 0;
+}
+.calendar {
+	width: 100%;
+	perspective:1000;
+	height: 250px;
+}
+.calendar-arrow {
+	width: 36px;
+	height: 36px;
+	background-color: #11C1F3;
+	color: #FFFFFF;
+	border-color: #1E9FC3;
+	padding-top: 0px;
+	border-width: 1px;
+	border-style: solid;
+}
+.event {
+	position: relative;
+}
+.event:after {
+	content: '•';
+	color: #FFFFFF;
+	font-size: 17px;
+	position: absolute;
+	right: 15px;
+	bottom: -5px;
+}
+.container {
+	align-items: center;
+	display: flex;
+	height: 284px;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 600px;
+	width: 100%;
+}
+.week-days, .week {
+	color: #dfebed;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px;
+}
+.week-days {
+	font-family: 'open-sans-light';
+	font-size: 14px;
+	margin-top: 6px;
+}
+.week span {
+	padding: 10px;
+	font-size: 16px;
+	min-width: 38px;
+	font-family: 'open-sans-light';
+}
+
+.selected {
+	color: #FFFFFF;
+	background-color: RGB(40, 120, 152);
+	border-radius: 50%;
+}
+
+.today {
+	color: #3DA6FF;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	font-weight: bold;
+}
+
+.different-month {
+	opacity: 0.3;
+}

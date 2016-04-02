@@ -1,0 +1,26 @@
+.pendient-option {
+	width: 86px;
+}
+.pendient-item {
+	border-style: hidden;
+	border-bottom-style: solid;
+	border-width: 6px;
+}
+.pendient-item-1 {
+	font-family: 'open-sans-semibold';
+}
+.pendient-item-2 {
+	font-family: 'open-sans-regular';
+}
+.pendient-item-3 {
+	font-family: 'open-sans-light';
+}
+.pendient-item-color {
+	float: right;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 2%;
+	background-color: #000000;
+}

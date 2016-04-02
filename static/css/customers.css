@@ -1,0 +1,25 @@
+.customer-item {
+	border-style: none;
+	border-bottom-style: solid;
+	border-width: 2px;
+}
+.customer-item-div {
+	display: block;
+}
+.customer-item-img, .customer-item-h2 {
+	float: left;
+}
+.customer-item-img {
+	width: 50px;
+}
+.customer-item-h2 {
+	padding: 15px;
+}
+.customer-data-item-note, .customer-data-item-hour, .customer-data-item-name{
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	overflow: hidden;
+	max-height: 3.6em;
+	line-height: 1.2em;
+	font-family: "open-sans-light";
+}
