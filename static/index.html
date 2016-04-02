@@ -6,22 +6,28 @@
     <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/calendar.css" rel="stylesheet">
-    <link href="css/citas-pendient.css" rel="stylesheet">
-    <link href="css/customers.css" rel="stylesheet">
-    <link href="css/adjustment.css" rel="stylesheet">
-    <link href="css/categories.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/forgot.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
+    <link href="css/landing.css" rel="stylesheet">
+    <link href="css/multi.css" rel="stylesheet">
+    <link href="css/list.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
+    <!-- google maps javascript -->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&sensor=true"></script>
+
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-    <script src="lib/node_modules/moment/moment.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/markerwithlabel/index.js"></script>
+    <script src="cordova.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -29,34 +35,19 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/routes.js"></script>
-    <script src="js/services.js"></script>
-
     <script src="js/home.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/detail.js"></script>
-    <script src="js/content.js"></script>
-    <script src="js/pendient.js"></script>
-    <script src="js/AddAppointment.js"></script>
-    <script src="js/NewClient.js"></script>
-    <script src="js/ExistClient.js"></script>
-    <script src="js/Customers.js"></script>
-    <script src="js/EditCustomer.js"></script>
-    <script src="js/CustomerData.js"></script>
-    <script src="js/CustomerHistory.js"></script>
-    <script src="js/AddCustomer.js"></script>
-    <script src="js/Adjustment.js"></script>
-    <script src="js/AdjustmentData.js"></script>
-    <script src="js/AdjustmentPhoto.js"></script>
-    <script src="js/AdjustmentSchedule.js"></script>
-    <script src="js/Categories.js"></script>
-    <script src="js/NewCategory.js"></script>
-    <script src="js/Service.js"></script>
-    <script src="js/NewService.js"></script>
-
+    <script src="js/forgot.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/landing.js"></script>
+    <script src="js/multi.js"></script>
+    <script src="js/list.js"></script>
   </head>
   <body ng-app="app">
     <div>
-        <ion-nav-view></ion-nav-view>
+        <ion-nav-view>
+        </ion-nav-view>
     </div>
   </body>
 </html>

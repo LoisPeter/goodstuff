@@ -1,0 +1,51 @@
+{
+  "name": "markerwithlabel",
+  "version": "1.1.13",
+  "description": "npm module of Google Map utility's Marker With Label",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesstelford/node-MarkerWithLabel.git"
+  },
+  "keywords": [
+    "google-map",
+    "marker",
+    "map",
+    "label"
+  ],
+  "author": {
+    "name": "Jess Telford",
+    "email": "hi@jes.st",
+    "url": "http://jes.st"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jesstelford/node-MarkerWithLabel/issues"
+  },
+  "homepage": "https://github.com/jesstelford/node-MarkerWithLabel#readme",
+  "gitHead": "aa81cd0e7925ff1819b80c4eedfa1f40e3e6f4a6",
+  "_id": "markerwithlabel@1.1.13",
+  "_shasum": "8ef238a230dea0e52e4e547dc0f1312066913de8",
+  "_from": "markerwithlabel@latest",
+  "_npmVersion": "3.3.12",
+  "_nodeVersion": "5.0.0",
+  "_npmUser": {
+    "name": "jesstelford",
+    "email": "jess+npmjs@jes.st"
+  },
+  "maintainers": [
+    {
+      "name": "jesstelford",
+      "email": "jess+npmjs@jes.st"
+    }
+  ],
+  "dist": {
+    "shasum": "8ef238a230dea0e52e4e547dc0f1312066913de8",
+    "tarball": "https://registry.npmjs.org/markerwithlabel/-/markerwithlabel-1.1.13.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/markerwithlabel/-/markerwithlabel-1.1.13.tgz"
+}

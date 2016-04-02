@@ -1,0 +1,25 @@
+<ion-view title="Login">
+    <ion-content scroll="false">
+        <div class="login-back">
+            <div class="login-logo"></div>
+            <form name="userForm" class="login-form" novalidate>
+                <div class="list login-list">
+                    <label class="item item-input login-email">
+                        <span class="input-label" style="color: white">Email Address</span>
+                        <input type="email" name="email" ng-model="email" style="color: white" required></input>
+                    </label>
+                    <p class="login-validate" ng-show="userForm.email.$invalid && !userForm.email.$pristine">please enter a valid email address.</p>
+                    <label class="item item-input login-password">
+                        <span class="input-label" style="color: white">Password</span>
+                        <input type="password" name="password" ng-model="password" style="color: white" required></input>
+                    </label>
+                    <p class="login-validate" ng-show="userForm.password.$invalid && !userForm.password.$pristine">Password is required.</p>
+                    <a class="button login-forgot" ng-click="goForgot()">Forgot password?</a>
+                </div>
+                <div class="login-btns">
+                    <button class="button login-login" ng-click="goLanding()" ng-show="!userForm.password.$invalid && !userForm.email.$invalid">LOGIN</button>
+                </div>    
+            </form>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,46 @@
+<ion-view title="landing">
+  <ion-nav-buttons side="left">
+     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-android-search"></button>
+    <button class="button button-icon icon ion-funnel"></button>
+    <button class="button button-icon icon ion-android-more-vertical"></button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+  </ion-nav-title>
+  <ion-content has-header="true" scroll="false">
+    <div id="map" data-tap-disabled="true">
+    </div>
+    <ion-scroll direction="y" style="height: 50%;">
+        <ion-list>
+            <ion-item ng-repeat="x in myItem.items track by $index">
+                <div class="item-product" style="background-image: url({{x.img}});">
+                    <i class="myheart icon ion-heart" ng-class="{'enable': x.heart, 'disable': !x.heart}" ng-click="clickHeart($index)"></i>
+                    <h3 class="item-product-spec" style="">{{x.spec}}</h3>
+                </div>
+                <div class="item-face" style="background-image: url({{x.photo}});"></div>
+                <div class="item-rank">
+                    <p class="product-name1">{{x.name1}}</p>
+                    <p class="product-name2">{{x.name2}}</p>
+                    <div class="item-stars">
+                        <a href="" style="color: white;">
+                          <i class="mystar enable icon ion-android-star"></i>
+                          <i class="mystar enable icon ion-android-star"></i>
+                          <i class="mystar enable icon ion-android-star"></i>
+                          <i class="mystar enable icon ion-android-star"></i>
+                          <i class="mystar disable icon ion-android-star"></i>
+                          <i class="reviews">10 Reviews</i>
+                        </a>
+                      </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-scroll>
+    <button class="button" ng-class="{'map-button-1': flag, 'map-button-11': !flag}" ng-click="goMypos()"></button>
+    <button class="button" ng-class="{'map-button-2': flag, 'map-button-21': !flag}" ng-click="goList()"></button>
+    <button class="button" ng-class="{'map-button-3': flag, 'map-button-31': !flag}" ></button>
+    <button class="button" ng-class="{'map-button-4': flag, 'map-button-41': !flag}" ></button>
+    <button class="button" ng-class="{'map-button-center': flag, 'map-button-center1': !flag}" ng-click="changeFlag()"></button>
+  </ion-content>
+</ion-view>
